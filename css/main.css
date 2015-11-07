@@ -1,0 +1,186 @@
+body {
+  background: url(../img/back.png)  no-repeat ;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Roboto', sans-serif;
+  color: rgba(0, 0, 0, 0.87);
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  width: 100%;
+  max-height: 150px;
+  background-color: rgba(255,255,255,.8);
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-timing-function: swing;
+          transition-timing-function: swing;
+  position: relative;
+  overflow: hidden;
+ }
+nav.open {
+  max-height: 700px;
+  -webkit-transition: max-height 0.5s ease-in;
+          transition: max-height 0.5s ease-in;
+}
+nav h2 {
+  -webkit-transition: 0.5s;
+          transition: 0.5s;
+  position: absolute;
+  font-size: 1.75em;
+  top: 25px;
+  right: 32px;
+  font-weight: 300;
+}
+nav img {
+  -webkit-transition: 0.5s;
+          transition: 0.5s;
+  position: absolute;
+   top: 20px;
+  right: 472px;
+ }
+nav h2 b {
+  font-weight: 500;
+  font-size: 1.2em;
+}
+@media (max-width: 768px) {
+  nav h2 {
+    font-size: 1.5em;
+    top: 16px;
+  }
+  nav h2 span {
+    display: none;
+  }
+}
+nav ul {
+  padding-top: 150px;
+}
+nav ul li {
+  list-style: none;
+  padding: 1em 2em 1em 1.5em;
+  -webkit-transition: all 0.5s;
+          transition: all 0.5s;
+}
+nav ul li a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.1em;
+  color: rgba(0, 0, 0, 0.87);
+}
+nav ul li:hover {
+  background: #b3e5fc;
+}
+nav ul li:hover a {
+  text-decoration: none;
+}
+nav ul li:active {
+  background: #82d4fa;
+}
+nav ul li:last-child {
+  margin-bottom: 1em;
+}
+
+.navToggle {
+  position: absolute;
+  width: 30px;
+  height: 60px;
+  top: 20px;
+  left: 32px;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+.navToggle:hover {
+  cursor: pointer;
+}
+.navToggle .icon-left {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  position: absolute;
+  height: 4px;
+  top: 25px;
+  width: 15px;
+  background-color: rgba(0, 0, 0, 0.87);
+}
+.navToggle .icon-left:before {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  position: absolute;
+  width: 15px;
+  height: 4px;
+  background-color: rgba(0, 0, 0, 0.87);
+  content: "";
+  top: -10px;
+}
+.navToggle .icon-left:after {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  position: absolute;
+  width: 15px;
+  height: 4px;
+  background-color: rgba(0, 0, 0, 0.87);
+  content: "";
+  top: 10px;
+}
+.navToggle .icon-right {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  position: absolute;
+  height: 4px;
+  top: 25px;
+  width: 15px;
+  background-color: rgba(0, 0, 0, 0.87);
+  left: 15px;
+}
+.navToggle .icon-right:before {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  position: absolute;
+  width: 15px;
+  height: 4px;
+  background-color: rgba(0, 0, 0, 0.87);
+  content: "";
+  top: -10px;
+}
+.navToggle .icon-right:after {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  position: absolute;
+  width: 15px;
+  height: 4px;
+  background-color: rgba(0, 0, 0, 0.87);
+  content: "";
+  top: 10px;
+}
+.navToggle.open .icon-left {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  background: transparent;
+}
+.navToggle.open .icon-left:before {
+  -webkit-transform: rotateZ(45deg) scaleX(1.4) translate(2px, 2px);
+          transform: rotateZ(45deg) scaleX(1.4) translate(2px, 2px);
+}
+.navToggle.open .icon-left:after {
+  -webkit-transform: rotateZ(-45deg) scaleX(1.4) translate(2px, -2px);
+          transform: rotateZ(-45deg) scaleX(1.4) translate(2px, -2px);
+}
+.navToggle.open .icon-right {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  background: transparent;
+}
+.navToggle.open .icon-right:before {
+  -webkit-transform: rotateZ(-45deg) scaleX(1.4) translate(-2px, 2px);
+          transform: rotateZ(-45deg) scaleX(1.4) translate(-2px, 2px);
+}
+.navToggle.open .icon-right:after {
+  -webkit-transform: rotateZ(45deg) scaleX(1.4) translate(-2px, -2px);
+          transform: rotateZ(45deg) scaleX(1.4) translate(-2px, -2px);
+}
+
+.x {
+  padding: 0;
+  margin: 0;
+}
