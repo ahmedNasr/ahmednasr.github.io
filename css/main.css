@@ -29,8 +29,8 @@ nav h2 {
   -webkit-transition: 0.5s;
           transition: 0.5s;
   position: absolute;
-  font-size: 1.75em;
-  top: 25px;
+  font-size: 1.05em;
+  top: 35px;
   right: 32px;
   font-weight: 300;
 }
@@ -39,7 +39,7 @@ nav img {
           transition: 0.5s;
   position: absolute;
    top: 20px;
-  right: 472px;
+  right: 300px;
  }
 nav h2 b {
   font-weight: 500;
